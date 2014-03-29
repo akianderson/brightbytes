@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require './calculator.rb'
+
+if ARGV.length < 1 || ARGV[0] == ""
+  puts 'Usage: calculate "1,2,3..."'
+else
+  calculator = Calculator.new
+  calculator.add(ARGV[0])
+end
