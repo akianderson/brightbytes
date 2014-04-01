@@ -2,6 +2,7 @@
 
 require './calculator.rb'
 
+puts "Calculator treats numbers after new lines or commas as separate addends"
 if ARGV.length < 1 || ARGV[0] == ""
   puts 'Usage: calculate "1,2,3..."'
 else
