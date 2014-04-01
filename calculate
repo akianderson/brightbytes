@@ -6,6 +6,7 @@ puts "Calculator treats numbers after new lines or commas as separate addends"
 if ARGV.length < 1 || ARGV[0] == ""
   puts 'Usage: calculate "1,2,3..."'
 else
+	numbers = ARGV[0].dup
   calculator = Calculator.new
-  calculator.add(ARGV[0])
+  calculator.add(numbers)
 end
